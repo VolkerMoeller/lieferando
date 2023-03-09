@@ -50,7 +50,7 @@ function setContentById(anyId, content) {
 
 
 function setFormatedValueById(anyId, value) {
-    value = value.toFixed(2);
+    value = value.toFixed(2).replace('.', ',');
     document.getElementById(anyId).innerHTML = value;
 }
 
@@ -92,7 +92,7 @@ function showEmptyBasket() {
     removeClassById('emptyBasket', 'hidden');
     setContentById('subtotal', '');
     setContentById('total', '');
-    setContentById('totalBasketButton', 0.00);
+    setContentById('totalBasketButton', '0,00');
 }
 
 
@@ -223,7 +223,7 @@ function renderBasket() {
         let meal = meals[i];
         let amount = amounts[i];
         let sale = sales[i];
-        sale = sale.toFixed(2);
+        sale = sale.toFixed(2).replace('.', ',');
         document.getElementById('basket').innerHTML += generateBasketHTML(i, meal, amount, sale);
         updateBasketSum();
     }
@@ -264,6 +264,8 @@ function generateBasketHTML(i, meal, amount, sale) {
     </tr>
     `;
 }
+
+// Lösung mit position: sticky;
 
 // window.onscroll = function () {
     // let shoppingCard = document.getElementById('contentRight');

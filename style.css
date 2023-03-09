@@ -302,6 +302,7 @@ a:link {
 
 .closeBasket {
     display: none;
+    cursor: pointer;
 }
 
 .emptyBasket {
@@ -415,8 +416,13 @@ footer {
     margin-right: 2px;
 }
 
-.basketRight {
-    height: calc(100vh - 76px);
+/* .basketRight { */
+    /* height: calc(100vh - 76px); */
+/* } */
+
+.deleteMeal button {
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.005);
 }
 
 /* end generated HTML */
