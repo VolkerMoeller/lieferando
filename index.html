@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Pizzeria La Notte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFonts.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="header standardDiv bar barTop" id="header">
+        <a href="index.html">
+            <div class="headerLeft">
+                <div class="logo">
+                    <img src="img/logo.png">
+                </div>
+                <div class="logoText">
+                    <span class="bold">Möllerando</span>
+                    <span class="unbold">.de</span>
+                </div>
+            </div>
+        </a>
+        <div class="headerMiddle">
+            <span class="bold">Von-Bülow-Straße 33, Brandenburg</span>
+        </div>
+        <div class="headerRight"></div>
+    </div>
+
+    <div class="placeholderTop">Nothing here</div>
+
+    <div class="content">
+        <div class="contentLeft">
+            <div class="responsiveText">
+                <span class="bold">Von-Bülow-Straße 33, Brandenburg</span>
+            </div>
+            <div class="pictureLocation">
+                <img src="img/pizza6.jpg">
+                <div class="pictureLogo">
+                    <img src="img/circle.png">
+                    <span class="logoTextLocation">Pizzeria La Notte</span>
+                    <div class="logoFlagLocation">
+                        <img src="img/flag.png">
+                    </div>
+                </div>
+            </div>
+            <div class="contentLeftLocation">
+                <h2>Pizzeria La Notte</h2>
+            </div>
+            <table class="contentLeftMealsList">
+                <tr>
+                    <th>
+                        <span>Beliebte Pizzas</span>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="meal">
+                        <div>
+                            <span class="mealDescription1stLine" id="meal1">SALAMI</span><br>
+                            <span class="mealDescription2ndLine">Teig und Mozzarella mit leckerer Salami</span><br>
+                            <span class="price" id="price1">9.99</span>
+                        </div>
+                        <div class="addDishButton">
+                            <button><img src="img/iconCross.png"></button>
+                            <button class="addDishButtonClicked" onclick="addToBasket('1')"><img
+                                    src="img/iconCross2.png"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="meal">
+                        <div>
+                            <span class="mealDescription1stLine" id="meal2">MARGHERITA</span><br>
+                            <span class="mealDescription2ndLine">Teig mit extra Mozzarella</span><br>
+                            <span class="price" id="price2">9.49</span>
+                        </div>
+                        <div class="addDishButton">
+                            <button onclick=""><img src="img/iconCross.png"></button>
+                            <button class="addDishButtonClicked" onclick="addToBasket('2')"><img
+                                    src="img/iconCross2.png"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="meal">
+                        <div>
+                            <span class="mealDescription1stLine" id="meal3">FUNGHI</span><br>
+                            <span class="mealDescription2ndLine">Teig und Mozzarella mit frischen Champignons,
+                                Basilikum-Pesto und extra Mozzarella</span><br>
+                            <span class="price" id="price3">9.49</span>
+                        </div>
+                        <div class="addDishButton">
+                            <button onclick=""><img src="img/iconCross.png"></button>
+                            <button class="addDishButtonClicked" onclick="addToBasket('3')"><img
+                                    src="img/iconCross2.png"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="meal">
+                        <div>
+                            <span class="mealDescription1stLine" id="meal4">CAPRESE</span><br>
+                            <span class="mealDescription2ndLine">Teig und Mozzarella mit frischen Tomaten,
+                                Mozzarella-Kugeln und Basilikum-Pesto</span><br>
+                            <span class="price" id="price4">9.49</span>
+                        </div>
+                        <div class="addDishButton">
+                            <button><img src="img/iconCross.png"></button>
+                            <button class="addDishButtonClicked" onclick="addToBasket('4')"><img
+                                    src="img/iconCross2.png"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="meal">
+                        <div>
+                            <span class="mealDescription1stLine" id="meal5">PROSCIUTTO</span><br>
+                            <span class="mealDescription2ndLine">Teig und Mozzarella mit Prosciutto cotto
+                                (Kochhinterschinken (zerkleinert)), frischen Champignons, extra Mozzarella </span><br>
+                            <span class="price" id="price5">9.99</span>
+                        </div>
+                        <div class="addDishButton">
+                            <button><img src="img/iconCross.png"></button>
+                            <button class="addDishButtonClicked" onclick="addToBasket('5')"><img
+                                    src="img/iconCross2.png"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="meal">
+                        <div>
+                            <span class="mealDescription1stLine" id="meal6">TUNA</span><br>
+                            <span class="mealDescription2ndLine">Teig und Mozzarella mit extra viel Thunfisch und roten
+                                Zwiebeln</span><br>
+                            <span class="price" id="price6">10.99</span>
+                        </div>
+                        <div class="addDishButton">
+                            <button><img src="img/iconCross.png"></button>
+                            <button class="addDishButtonClicked" onclick="addToBasket('6')"><img
+                                    src="img/iconCross2.png"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="meal">
+                        <div>
+                            <span class="mealDescription1stLine" id="meal7">WAIKIKI</span><br>
+                            <span class="mealDescription2ndLine">Teig und Mozzarella mit Prosciutto cotto
+                                (Kochhinterschinken (zerkleinert)), fruchtiger Ananas und extra viel Käse</span><br>
+                            <span class="price" id="price7">10.49</span>
+                        </div>
+                        <div class="addDishButton">
+                            <button><img src="img/iconCross.png"></button>
+                            <button class="addDishButtonClicked" onclick="addToBasket('7')"><img
+                                    src="img/iconCross2.png"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="meal">
+                        <div>
+                            <span class="mealDescription1stLine" id="meal8">BOSTON</span><br>
+                            <span class="mealDescription2ndLine">Teig und Mozzarella mit Sauce Hollandaise als
+                                Basissauce, Prosciutto cotto und Broccoli-Röschen</span><br>
+                            <span class="price" id="price8">10.49</span>
+                        </div>
+                        <div class="addDishButton">
+                            <button><img src="img/iconCross.png"></button>
+                            <button class="addDishButtonClicked" onclick="addToBasket('8')"><img
+                                    src="img/iconCross2.png"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="meal">
+                        <div>
+                            <span class="mealDescription1stLine" id="meal9">LUCIFER</span><br>
+                            <span class="mealDescription2ndLine">Teig und Mozzarella mit Chilisalami frischen
+                                Champignons und feurigen rot-grünen Jalapeños (Scharf)</span><br>
+                            <span class="price" id="price9">10.49</span>
+                        </div>
+                        <div class="addDishButton">
+                            <button><img src="img/iconCross.png"></button>
+                            <button class="addDishButtonClicked" onclick="addToBasket('9')"><img
+                                    src="img/iconCross2.png"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="meal">
+                        <div>
+                            <span class="mealDescription1stLine" id="meal10">BBQ PONCHO</span><br>
+                            <span class="mealDescription2ndLine">Teig und Mozzarella mit BBQ-Sauce Hähnchenbrustfilet,
+                                Paprikastreifen, roten Zwiebeln und Mais</span><br>
+                            <span class="price" id="price10">11.99</span>
+                        </div>
+                        <div class="addDishButton">
+                            <button><img src="img/iconCross.png"></button>
+                            <button class="addDishButtonClicked" onclick="addToBasket('10')"><img
+                                    src="img/iconCross2.png"></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="contentRight" id="contentRight">
+            <div class="basketRight">
+                <div class="standardDiv">
+                    <div class="shoppingBasketText bold">Warenkorb
+                        <button class="closeBasket" onclick="closeBasket()"><img src="img/close.png"></button>
+                    </div>
+
+                </div>
+                <div class="emptyBasket" id="emptyBasket">
+                    <div class="emptyBasketImage"><img src="img/basket2.png"></div>
+                    <span>Wähle leckere Pizzas aus der Karte <br>und bestelle Dein Menü.</span>
+                </div>
+                <table id="basket">
+                </table>
+                <div class="basketTotal">
+                    <table>
+                        <tr>
+                            <td>
+                                <span>Zwischensumme</span>
+                            </td>
+                            <td>
+                                <div id="subtotal"></div>
+                                <span>€</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Lieferkosten</span>
+                            </td>
+                            <td>
+                                <div>1.00</div>
+                                <span value="0.00">€</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="bold">Gesamt</span>
+                            </td>
+                            <td>
+                                <div class="bold" id="total"></div>
+                                <span class="bold" value="0.00">€</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="order">
+                    <button onclick="">Bestellen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer standardDiv bar barBottom" id="footer">
+        <button class="buttonBottom standardDiv" onclick="showBasket()">
+            <span>Warenkorb</span>
+            <img src="img/basket.png">
+            <div class="standardDiv">
+                <div class="euro bold" id="totalBasketButton">0.00</div>
+                <span> €</span>
+            </div>
+        </button>
+    </div>
+</body>
+
+</html>
