@@ -95,14 +95,14 @@ a:link {
 /* begin content */
 
 .content {
-    height: calc(100vh - 76px);
+    /* height: calc(100vh - 76px); */
     display: flex;
     justify-content: left;
 }
 
 .contentLeft {
     width: calc(100% - 490px);
-    height: calc(100vh - 76px);
+    /* height: calc(100vh - 76px); */
     display: flex;
     flex-direction: column;
 }
@@ -245,11 +245,12 @@ a:link {
 
 .contentRight {
     overflow-y: auto;
-    position: fixed;
+    position: sticky;
+    top: 0;
     right: 0px;
-    top: 76px;
     width: 490px;
-    height: calc(100vh - 76px);
+    /* height: calc(100vh - 76px); */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: white;
