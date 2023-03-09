@@ -265,11 +265,17 @@ function generateBasketHTML(i, meal, amount, sale) {
     `;
 }
 
-// window.onscroll = function () {
-    // let shoppingCard = document.getElementById('contentRight');
-    // if (window.scrollY > 0) {
-        // shoppingCard.style = 'top: 0';
-    // } else {
-        // shoppingCard.style = 'top: 100px';
-    // }
-// }
+window.onscroll = function () {
+    let shoppingCard = document.getElementById('contentRight');
+    let position;
+
+    if (window.scrollY > 0) {
+        position = 0
+        shoppingCard.style = `top: ${position}` + 'px';
+    } else {
+        position = 76;
+        shoppingCard.style = `top: ${position}` + 'px';
+    }
+
+}
+

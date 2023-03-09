@@ -1,4 +1,3 @@
-
 /* general*/
 
 body {
@@ -29,7 +28,7 @@ a:link {
 }
 
 .bar {
-    position: fixed;
+    /* position: fixed; */
     height: 48px;
     left: 0px;
     right: 0px;
@@ -88,6 +87,7 @@ a:link {
 /* begin placeholder */
 
 .placeholderTop {
+    display: none;
     height: 76px;
 }
 
@@ -119,7 +119,7 @@ a:link {
 }
 
 .pictureLocation img {
-max-width: 100%;
+    max-width: 100%;
     object-fit: cover;
 }
 
@@ -254,6 +254,7 @@ max-width: 100%;
     flex-direction: column;
     background-color: white;
     box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition:all 125ms ease-in-out ;
 }
 
 .contentRight table {
@@ -284,6 +285,7 @@ max-width: 100%;
 .basketRight {
     width: 490px;
     overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.02);
 }
 
 .shoppingBasketText {
@@ -412,6 +414,10 @@ footer {
     margin-right: 2px;
 }
 
+.basketRight {
+    height: calc(100vh - 76px);
+}
+
 /* end generated HTML */
 /* begin responsiv */
 
@@ -449,7 +455,7 @@ footer {
 
     .contentRight {
         width: 100%;
-        transform: translateX(100%);
+        transform: translateX(101%);
         display: flex;
         position: fixed;
         align-items: center;
@@ -464,12 +470,14 @@ footer {
     .contentLeftLocation {
         justify-content: center;
     }
-    
+
     .showBasket {
         transform: translateX(0%);
         width: 100%;
     }
-    
+
+
+
 }
 
 @media (max-width: 960px) {
